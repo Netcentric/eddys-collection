@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/netcentric/eddys-video/compare/v1.0.2...v1.0.3) (2024-02-19)
+
+
+### Bug Fixes
+
+* delete libs ([4ffec10](https://github.com/netcentric/eddys-video/commit/4ffec10b3523cfcec30bec08f8e891b93d7fbd4f))
+
 ## [1.0.2](https://github.com/netcentric/eddys-video/compare/v1.0.1...v1.0.2) (2024-02-19)
 
 

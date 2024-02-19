@@ -2,9 +2,9 @@
 
 Description
 
-[![Version](https://img.shields.io/npm/v/@companynamespace/npm-package-template.svg)](https://npmjs.org/package/@companynamespace/npm-package-template)
-[![Build Status](https://github.com/companynamespace/npm-package-template/workflows/CI/badge.svg?branch=main)](https://github.com/companynamespace/npm-package-template/actions)
-[![CodeQL Analysis](https://github.com/companynamespace/npm-package-template/workflows/CodeQL/badge.svg?branch=main)](https://github.com/companynamespace/npm-package-template/actions)
+[![Version](https://img.shields.io/npm/v/@netcentric/eddys-video.svg)](https://npmjs.org/package/@netcentric/eddys-video)
+[![Build Status](https://github.com/netcentric/eddys-video/workflows/CI/badge.svg?branch=main)](https://github.com/netcentric/eddys-video/actions)
+[![CodeQL Analysis](https://github.com/netcentric/eddys-video/workflows/CodeQL/badge.svg?branch=main)](https://github.com/netcentric/eddys-video/actions)
 [![semver: semantic-release](https://img.shields.io/badge/semver-semantic--release-blue.svg)](https://github.com/semantic-release/semantic-release)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 

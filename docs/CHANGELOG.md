@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/netcentric/eddys-video/compare/v1.0.3...v1.0.4) (2024-02-19)
+
+
+### Bug Fixes
+
+* ignore libs ([03e03ee](https://github.com/netcentric/eddys-video/commit/03e03ee0990b6e868509786f338dd289607434ac))
+
 ## [1.0.3](https://github.com/netcentric/eddys-video/compare/v1.0.2...v1.0.3) (2024-02-19)
 
 

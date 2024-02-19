@@ -1,4 +1,4 @@
-# npm-package-template
+# @netcentric/eddys-video
 
 Description
 

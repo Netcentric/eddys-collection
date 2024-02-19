@@ -1,3 +1,11 @@
+## [1.0.2](https://github.com/netcentric/eddys-video/compare/v1.0.1...v1.0.2) (2024-02-19)
+
+
+### Bug Fixes
+
+* add copy paste for libs folder ([a94dc0c](https://github.com/netcentric/eddys-video/commit/a94dc0cb19e1b98066f5bc541f00bb174cf538a3))
+* merge ([44bf21a](https://github.com/netcentric/eddys-video/commit/44bf21a068b6456986ee41ca09ca4aa64a20373f))
+
 ## [1.0.1](https://github.com/netcentric/eddys-video/compare/v1.0.0...v1.0.1) (2024-02-19)
 
 

@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/netcentric/eddys-video/compare/v1.0.0...v1.0.1) (2024-02-19)
+
+
+### Bug Fixes
+
+* setup2 ([0cd0826](https://github.com/netcentric/eddys-video/commit/0cd0826148c11214454d1e5e31682dbb7850cbb4))
+
 # 1.0.0 (2024-02-19)
 
 

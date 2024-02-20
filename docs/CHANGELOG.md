@@ -1,3 +1,10 @@
+## [1.0.12](https://github.com/netcentric/eddys-video/compare/v1.0.11...v1.0.12) (2024-02-20)
+
+
+### Bug Fixes
+
+* change function naming ([5c9be52](https://github.com/netcentric/eddys-video/commit/5c9be52b441ca426f74a97baca409cb09d224e8f))
+
 ## [1.0.11](https://github.com/netcentric/eddys-video/compare/v1.0.10...v1.0.11) (2024-02-20)
 
 

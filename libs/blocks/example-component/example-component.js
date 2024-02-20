@@ -1,3 +1,4 @@
+const componentName = 'example-component';
 export class ExampleComponent {
   constructor(block) {
     console.log('this is the example component', block);
@@ -5,6 +6,7 @@ export class ExampleComponent {
 }
 
 export async function defaultDecorate(block, ClassObj) {
+  block.classList.add(componentName);
   const elements = Array.from(block.children);
 
   elements.forEach( element => {

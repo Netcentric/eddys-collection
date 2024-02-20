@@ -1,3 +1,10 @@
+## [1.0.8](https://github.com/netcentric/eddys-video/compare/v1.0.7...v1.0.8) (2024-02-20)
+
+
+### Bug Fixes
+
+* change main file ([eda4bf5](https://github.com/netcentric/eddys-video/commit/eda4bf5f4bb16424853184759e4519ce59e884ac))
+
 ## [1.0.7](https://github.com/netcentric/eddys-video/compare/v1.0.6...v1.0.7) (2024-02-20)
 
 

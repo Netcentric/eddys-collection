@@ -4,12 +4,12 @@ export class ExampleComponent {
   }
 }
 
-export async function defaultDecorate(block) {
+export async function defaultDecorate(block, ClassObj) {
   const elements = Array.from(block.children);
 
   elements.forEach( element => {
     element.classList.add('example-component-element');
   })
 
-  const exampleComponent = new ExampleComponent(block);
+  const exampleComponent = ClassObj ? new ClassObj: new ExampleComponent(block);
 }

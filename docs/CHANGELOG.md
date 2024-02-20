@@ -1,3 +1,10 @@
+## [1.0.9](https://github.com/netcentric/eddys-video/compare/v1.0.8...v1.0.9) (2024-02-20)
+
+
+### Bug Fixes
+
+* install script ([760e5b9](https://github.com/netcentric/eddys-video/commit/760e5b97e9bf6aab1dba1f79c30751997a900ace))
+
 ## [1.0.8](https://github.com/netcentric/eddys-video/compare/v1.0.7...v1.0.8) (2024-02-20)
 
 

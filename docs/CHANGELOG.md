@@ -1,3 +1,10 @@
+## [1.0.13](https://github.com/netcentric/eddys-video/compare/v1.0.12...v1.0.13) (2024-02-20)
+
+
+### Bug Fixes
+
+* possibility to extend class ([691f120](https://github.com/netcentric/eddys-video/commit/691f120b2a583b71a45caf31b3d92afa7935db68))
+
 ## [1.0.12](https://github.com/netcentric/eddys-video/compare/v1.0.11...v1.0.12) (2024-02-20)
 
 

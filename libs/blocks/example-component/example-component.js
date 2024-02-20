@@ -4,7 +4,7 @@ export class ExampleComponent {
   }
 }
 
-export function decorate(block) {
+export async function defaultDecorate(block) {
   const elements = Array.from(block.children);
 
   elements.forEach( element => {

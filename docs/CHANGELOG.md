@@ -1,3 +1,10 @@
+## [1.0.11](https://github.com/netcentric/eddys-video/compare/v1.0.10...v1.0.11) (2024-02-20)
+
+
+### Bug Fixes
+
+* update install path ([e4c0f55](https://github.com/netcentric/eddys-video/commit/e4c0f5564c837520dbd9b461c2e6ed48a6fcfa6e))
+
 ## [1.0.10](https://github.com/netcentric/eddys-video/compare/v1.0.9...v1.0.10) (2024-02-20)
 
 

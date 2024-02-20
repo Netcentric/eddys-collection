@@ -1,3 +1,10 @@
+## [1.0.14](https://github.com/netcentric/eddys-video/compare/v1.0.13...v1.0.14) (2024-02-20)
+
+
+### Bug Fixes
+
+* add-original class to the block ([16744d2](https://github.com/netcentric/eddys-video/commit/16744d2b6092e44f445f245256e23627dbc50607))
+
 ## [1.0.13](https://github.com/netcentric/eddys-video/compare/v1.0.12...v1.0.13) (2024-02-20)
 
 

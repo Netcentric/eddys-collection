@@ -11,9 +11,9 @@ function mkFullPathSync(absolutePath, permissions = '0755') {
   }, '');
 }
 
-mkFullPathSync(`../../${filePath}`);
+mkFullPathSync(`../../../${filePath}`);
 
-fs.cp(filePath, `../../${filePath}`, { recursive: true }, (err) => {
+fs.cp(filePath, `../../../${filePath}`, { recursive: true }, (err) => {
   if (err) fs.writeFileSync(`error.txt`, err, 'utf8');
   fs.writeFileSync(`done.txt`, `${filePath} => ../../${filePath}`, 'utf8');
 });

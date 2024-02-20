@@ -11,10 +11,9 @@
     "type": "git",
     "url": "https://github.com/netcentric/eddys-video"
   },
-  "main": "src/blocks/eddys-video/eddys-video.js",
+  "main": "libs",
   "scripts": {
-    "build": "cp -r src/ libs",
-    "postinstall": "cp -r libs $INIT_CWD"
+    "postinstall": "node install.js"
   },
   "keywords": [
     "keyword"

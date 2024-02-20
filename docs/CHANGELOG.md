@@ -1,3 +1,10 @@
+## [1.0.7](https://github.com/netcentric/eddys-video/compare/v1.0.6...v1.0.7) (2024-02-20)
+
+
+### Bug Fixes
+
+* add video code ([26703d7](https://github.com/netcentric/eddys-video/commit/26703d78a5f65afe64d9fd95b8c2cf9986e59ede))
+
 ## [1.0.6](https://github.com/netcentric/eddys-video/compare/v1.0.5...v1.0.6) (2024-02-19)
 
 

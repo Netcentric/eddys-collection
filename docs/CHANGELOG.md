@@ -1,3 +1,10 @@
+## [1.0.17](https://github.com/netcentric/eddys-video/compare/v1.0.16...v1.0.17) (2024-02-22)
+
+
+### Bug Fixes
+
+* readme ([374df54](https://github.com/netcentric/eddys-video/commit/374df546808969b55fdd09ea1f9426445303c866))
+
 ## [1.0.16](https://github.com/netcentric/eddys-video/compare/v1.0.15...v1.0.16) (2024-02-22)
 
 

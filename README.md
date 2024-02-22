@@ -1,6 +1,4 @@
-# @netcentric/eddys-video
-
-Description
+# Netcentric Block Collection
 
 [![Version](https://img.shields.io/npm/v/@netcentric/eddys-video.svg)](https://npmjs.org/package/@netcentric/eddys-video)
 [![Build Status](https://github.com/netcentric/eddys-video/workflows/CI/badge.svg?branch=main)](https://github.com/netcentric/eddys-video/actions)
@@ -8,31 +6,49 @@ Description
 [![semver: semantic-release](https://img.shields.io/badge/semver-semantic--release-blue.svg)](https://github.com/semantic-release/semantic-release)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-## TLDR;
+Custom and extendable block collection 
 
-1. Create new repo from this Template
-   [![Template repo](https://docs.github.com/assets/images/help/repository/use-this-template-button.png)](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template)
-2. Update Readme
-    - replace `@companynamespace/npm-package-template`  with new package_name
-3. Update package.json
-    - replace "name" `@companynamespace/npm-package-template`  with new package_name
-    - replace "repo" `companynamespace/npm-package-template`  with new package_name repo
-    - Add description, and other fields if needed
-4. Update LICENSE
-    - Update `[COMPANY` name
-    - Update year `[yyyy]`
-5. Update docs/CODE_OF_CONDUCT.md
-    - Update `<COMPANY>` name
-6. Activate automatic release
-    - disable `dry_run` in Release step in .github/workflows/release.yml.
+## Installation
 
-## Content
+In the Edge delivery project folder run
 
-### Docs
-  - LICENSE
-  - docs/CODE_OF_CONDUCT.md
-  - docs/CONTRIBUTING.md
-  - docs/CHANGELOG.md --> dynamically updated
+`npm i @netcentric/eddys-block-collection` //TODO change name to the correct package/repo
+
+it will download it as a dependency and create a `/libs` folder with all th e blocks to reference.
+
+## Usage
+
+in your `/blocks` folder create a new block with a css and a js file (the name can be the same or different that the block you want to use)
+
+### There Are 2 ways to use a block from the Block Collection
+
+#### Option 1 - Use an already existing block with no possibility to extend the js or use a custom block developed using a js class Not extending the js class
+
+```javascript
+import defaultDecorate from '/libs/blocks/<original-block-name>/<original-block-name>.js';
+
+export default async function decorate(block) {
+    // Custom decoration can be done here
+  await defaultDecorate(block);
+}
+```
+
+#### Option 2 - Use a custom block developed using a js class extending the js class
+
+```javascript
+import { defaultDecorate, OriginalBlockName } from '/libs/blocks/<original-block-name>/<original-block-name>.js';
+
+class BlockName extends OriginalBlockName {
+  constructor(block) {
+    super(block);
+  }
+    // Code here
+}
+
+export default async function decorate(block) {
+  await defaultDecorate(block, BlockName); // Note that you need to pass the extended class to the defaultDeaorate
+}
+```
 
 ### Issue template
   - .github/ISSUE_TEMPLATE.md

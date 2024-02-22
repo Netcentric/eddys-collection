@@ -1,3 +1,10 @@
+## [1.0.15](https://github.com/netcentric/eddys-video/compare/v1.0.14...v1.0.15) (2024-02-22)
+
+
+### Bug Fixes
+
+* example block ([f156eb6](https://github.com/netcentric/eddys-video/commit/f156eb66c3b63e0e03cbb38e4c04cf20efef9da6))
+
 ## [1.0.14](https://github.com/netcentric/eddys-video/compare/v1.0.13...v1.0.14) (2024-02-20)
 
 

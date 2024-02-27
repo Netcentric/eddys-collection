@@ -1,6 +1,8 @@
-{
-  "extends": "semantic-release-monorepo",
+module.exports = {
+  extends: "semantic-release-monorepo",
+  dryRun: true,
   "branches": ["monorepo"],
+  "tagFormat": "v${version}",
   "plugins": [
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",

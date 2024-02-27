@@ -21,7 +21,11 @@
     "@semantic-release/git": "^10.0.1",
     "@semantic-release/npm": "^11.0.2",
     "@semantic-release/release-notes-generator": "^12.1.0",
-    "beachball": "^2.40.0",
-    "semantic-release-monorepo": "^8.0.2"
-  }
+    "semantic-release": "^23.0.2",
+    "semantic-release-monorepo": "^8.0.2",
+    "stream-buffers": "^3.0.2"
+  },
+  "workspaces": [
+    "./packages/*/*"
+  ]
 }

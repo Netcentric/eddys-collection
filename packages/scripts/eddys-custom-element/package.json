@@ -9,12 +9,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Netcentric/eddys-custom-element"
+    "url": "https://github.com/netcentric/eddys-collection"
   },
   "main": "libs/",
   "author": "Cognizant Netcentric (https://www.netcentric.biz)",
   "scripts": {
-    "postinstall": "node install.js",
+    "postinstall2": "node install.js",
+    "release": "semantic-release",
     "test": "echo \"eddys-custom-element\""
   },
   "browserslist": [
@@ -27,5 +28,9 @@
   "engines": {
     "node": ">=18.0.0"
   },
-  "files": ["./libs", "install.js"]
+  "files": ["./libs", "install.js"],
+  "release": {
+    "extends": "../../../release.config.cjs",
+    "tagFormat": "eddys-custom-element-v${version}"
+  }
 }

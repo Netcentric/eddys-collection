@@ -27,13 +27,10 @@ jobs:
         run: npm run build --workspaces --if-present
       - name: Run Tests
         run: npm test --workspaces --if-present
+      - name: Prepare modules
+        run: node release/prepareModule.js
       - name: Release
-        uses: cycjimmy/semantic-release-action@v3
-        with:
-          dry_run: false
-          extra_plugins: |
-            @semantic-release/changelog
-            @semantic-release/git
+        run: npm run release --workspaces
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

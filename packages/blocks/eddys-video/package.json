@@ -1,5 +1,5 @@
 {
-  "name": "@netcentric/eddys-video2",
+  "name": "@netcentric/eddys-video",
   "version": "1.0.0",
   "description": "<Package description>",
   "license": "Apache-2.0",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/netcentric/eddys-collection"
+    "url": "git+https://github.com/netcentric/eddys-collection.git"
   },
   "main": "libs",
   "scripts": {

@@ -63,13 +63,8 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Build Library
-        run: npm run build --if-present
+        run: npm run build --workspaces --if-present
       - name: Run Tests
-        run: npm test --if-present
+        run: npm test --workspaces --if-present
       - name: Publish npm package
-        uses: cycjimmy/semantic-release-action@v3
-        with:
-          dry_run: ${{ github.event.inputs.dryRun == 'true' }}
-          extra_plugins: |
-            @semantic-release/changelog
-            @semantic-release/git
+        run: npm run release --workspaces

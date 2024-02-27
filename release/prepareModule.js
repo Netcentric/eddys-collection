@@ -1,9 +1,10 @@
 const { getChangedModules } = require('./getChangedPackages');
 const fs = require('fs/promises');
-// const { release } = require('./release');
+const { join } = require('path');
 
 const copyTemplates = async (modulePath) => {
-  return fs.cp('./templates/', modulePath, { recursive: true });
+  const templates = join(__dirname, 'templates', '/');
+  return fs.cp(templates, modulePath, { recursive: true });
 }
 
 const prepareModules = async () => {

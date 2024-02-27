@@ -67,6 +67,6 @@ jobs:
       - name: Run Tests
         run: npm test --workspaces --if-present
       - name: Prepare release
-        run: node release/prepareModule.js
+        run: DRY_RUN=${{ github.event.inputs.dryRun == 'true' }} node release/prepareModule.js
       - name: Release
         run: npm run release --workspaces

@@ -5,7 +5,7 @@ const pkgTag = pkg.name.replace('@', '').replace('/', '-');
 module.exports = {
   extends: "semantic-release-monorepo",
   tagFormat: `${pkgTag}-v\${version}`,
-  dryRun: true,
+  dryRun: !!process.env.DRY_RUN,
   "branches": ["monorepo"],
   "plugins": [
     "@semantic-release/commit-analyzer",

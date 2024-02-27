@@ -1,3 +1,10 @@
+# [@netcentric/eddys-custom-element2-v1.0.1](https://github.com/netcentric/eddys-collection/compare/netcentric-eddys-custom-element2-v1.0.0...netcentric-eddys-custom-element2-v1.0.1) (2024-02-27)
+
+
+### Bug Fixes
+
+* update git url ([f429b73](https://github.com/netcentric/eddys-collection/commit/f429b7327e5bf064dca58c24945821923bfa1763))
+
 # @netcentric/eddys-custom-element2-v1.0.0 (2024-02-27)
 
 

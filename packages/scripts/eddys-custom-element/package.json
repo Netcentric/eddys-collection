@@ -28,5 +28,8 @@
   "engines": {
     "node": ">=18.0.0"
   },
-  "files": ["./libs", "install.js"]
+  "files": [
+    "./libs",
+    "install.js"
+  ]
 }

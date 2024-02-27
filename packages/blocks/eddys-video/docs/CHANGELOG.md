@@ -1,3 +1,11 @@
+# @netcentric/eddys-video2-v1.0.0 (2024-02-27)
+
+
+### Bug Fixes
+
+* rename packages for testing ([0264b73](https://github.com/netcentric/eddys-collection/commit/0264b733b0e495944b83e1be718063a42f5d4c56))
+* update release config ([cdfe4c9](https://github.com/netcentric/eddys-collection/commit/cdfe4c953f6ca01a36861d25500cac5c3f2b6e64))
+
 ## [1.0.17](https://github.com/netcentric/eddys-video/compare/v1.0.16...v1.0.17) (2024-02-22)
 
 

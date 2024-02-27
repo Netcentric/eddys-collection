@@ -20,5 +20,8 @@
   "keywords": [
     "keyword"
   ],
-  "files": ["./libs", "install.js"]
+  "files": [
+    "./libs",
+    "install.js"
+  ]
 }

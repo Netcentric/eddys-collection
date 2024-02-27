@@ -1,20 +1,4 @@
-# [@netcentric/eddys-custom-element2-v1.0.1](https://github.com/netcentric/eddys-collection/compare/netcentric-eddys-custom-element2-v1.0.0...netcentric-eddys-custom-element2-v1.0.1) (2024-02-27)
-
-
-### Bug Fixes
-
-* update git url ([f429b73](https://github.com/netcentric/eddys-collection/commit/f429b7327e5bf064dca58c24945821923bfa1763))
-
-# @netcentric/eddys-custom-element2-v1.0.0 (2024-02-27)
-
-
-### Bug Fixes
-
-* delete test file ([9b8ea2f](https://github.com/netcentric/eddys-collection/commit/9b8ea2fffac60ea79823e4660fa8b88c51399731))
-* rename packages for testing ([0264b73](https://github.com/netcentric/eddys-collection/commit/0264b733b0e495944b83e1be718063a42f5d4c56))
-* update release config ([cdfe4c9](https://github.com/netcentric/eddys-collection/commit/cdfe4c953f6ca01a36861d25500cac5c3f2b6e64))
-
-# [1.3.0](https://github.com/Netcentric/eddys-custom-element/compare/v1.2.0...v1.3.0) (2024-02-22)
+# @netcentric/eddys-custom-element-v1.0.0 (2024-02-27)
 
 
 ### Features

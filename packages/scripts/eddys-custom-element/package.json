@@ -28,9 +28,5 @@
   "engines": {
     "node": ">=18.0.0"
   },
-  "files": ["./libs", "install.js"],
-  "release": {
-    "extends": "../../../release.config.cjs",
-    "tagFormat": "eddys-custom-element-v${version}"
-  }
+  "files": ["./libs", "install.js"]
 }

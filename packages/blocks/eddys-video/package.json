@@ -20,9 +20,5 @@
   "keywords": [
     "keyword"
   ],
-  "files": ["./libs", "install.js"],
-  "release": {
-    "extends": "../../../release.config.cjs",
-    "tagFormat": "eddys-video-v${version}"
-  }
+  "files": ["./libs", "install.js"]
 }

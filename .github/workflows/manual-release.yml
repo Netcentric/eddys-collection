@@ -50,9 +50,9 @@ jobs:
 
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Setup Node.js ${{ matrix.NODE_VERSION }}
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.NODE_VERSION }}
       - name: Commit trigger
@@ -61,10 +61,12 @@ jobs:
 
           ${{ github.event.inputs.version }}:Forced Manual Release without code changes"
       - name: Install dependencies
-        run: npm ci
+        run: npm ci --ignore-scripts
       - name: Build Library
         run: npm run build --workspaces --if-present
       - name: Run Tests
         run: npm test --workspaces --if-present
-      - name: Publish npm package
+      - name: Prepare release
+        run: node release/prepareModule.js
+      - name: Release
         run: npm run release --workspaces

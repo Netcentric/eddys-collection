@@ -2,8 +2,8 @@
 Your project's description...
 
 ## Environments
-- Preview: https://main--aem-edge-delivery-test--nfarmache-nc.hlx.page/
-- Live: https://main--aem-edge-delivery-test--nfarmache-nc.hlx.live/
+- Preview: https://main--eddys-router--nfarmache-nc.hlx.page/
+- Live: https://main--eddys-router--nfarmache-nc.hlx.live/
 
 ## Installation
 

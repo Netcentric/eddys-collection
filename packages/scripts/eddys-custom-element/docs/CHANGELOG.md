@@ -1,3 +1,10 @@
+# [@netcentric/eddys-custom-element-v1.4.1](https://github.com/netcentric/eddys-collection/compare/netcentric-eddys-custom-element-v1.4.0...netcentric-eddys-custom-element-v1.4.1) (2024-02-28)
+
+
+### Bug Fixes
+
+* update Readme ([9286f97](https://github.com/netcentric/eddys-collection/commit/9286f97d1ce7f520adcebc115114265acbf6200f))
+
 # @netcentric/eddys-custom-element-v1.0.0 (2024-02-28)
 
 

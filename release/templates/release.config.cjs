@@ -6,7 +6,7 @@ module.exports = {
   extends: "semantic-release-monorepo",
   tagFormat: `${pkgTag}-v\${version}`,
   dryRun: !!process.env.DRY_RUN,
-  "branches": ["monorepo"],
+  "branches": ["main"],
   "plugins": [
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",

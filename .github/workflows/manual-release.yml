@@ -24,7 +24,7 @@ env:
   GIT_COMMITTER_NAME: github-actions
   GIT_COMMITTER_EMAIL: github-actions@github.com
   CI: true
-  CONFIG_NODE_VERSION: '["16.x"]'
+  CONFIG_NODE_VERSION: '["20.x"]'
   CONFIG_OS: '["ubuntu-latest"]'
 # Main Job
 jobs:
@@ -50,9 +50,9 @@ jobs:
 
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Setup Node.js ${{ matrix.NODE_VERSION }}
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.NODE_VERSION }}
       - name: Commit trigger
@@ -61,15 +61,12 @@ jobs:
 
           ${{ github.event.inputs.version }}:Forced Manual Release without code changes"
       - name: Install dependencies
-        run: npm ci
+        run: npm ci --ignore-scripts
       - name: Build Library
-        run: npm run build --if-present
+        run: npm run build --workspaces --if-present
       - name: Run Tests
-        run: npm test --if-present
-      - name: Publish npm package
-        uses: cycjimmy/semantic-release-action@v3
-        with:
-          dry_run: ${{ github.event.inputs.dryRun == 'true' }}
-          extra_plugins: |
-            @semantic-release/changelog
-            @semantic-release/git
+        run: npm test --workspaces --if-present
+      - name: Prepare release
+        run: DRY_RUN=${{ github.event.inputs.dryRun == 'true' }} node release/prepareModule.js
+      - name: Release
+        run: npm run release --workspaces

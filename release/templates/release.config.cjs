@@ -1,5 +1,12 @@
-{
-  "branches": ["main"],
+const pkg = require('./package.json');
+
+const pkgTag = pkg.name.replace('@', '').replace('/', '-');
+
+module.exports = {
+  extends: "semantic-release-monorepo",
+  tagFormat: `${pkgTag}-v\${version}`,
+  dryRun: !!process.env.DRY_RUN,
+  "branches": ["monorepo"],
   "plugins": [
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",

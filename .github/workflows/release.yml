@@ -12,28 +12,25 @@ jobs:
     strategy:
       matrix:
         os: [ ubuntu-latest ]
-        node-version: [ 16.x ]
+        node-version: [ 20.x ]
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix['node-version'] }}
       - name: Install dependencies
         run: npm ci --ignore-scripts
       - name: Build Library
-        run: npm run build --if-present
+        run: npm run build --workspaces --if-present
       - name: Run Tests
-        run: npm test --if-present
+        run: npm test --workspaces --if-present
+      - name: Prepare modules
+        run: node release/prepareModule.js
       - name: Release
-        uses: cycjimmy/semantic-release-action@v3
-        with:
-          dry_run: false
-          extra_plugins: |
-            @semantic-release/changelog
-            @semantic-release/git
+        run: npm run release --workspaces
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

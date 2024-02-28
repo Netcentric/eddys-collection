@@ -1,5 +1,4 @@
-## [1.0.17](https://github.com/netcentric/eddys-video/compare/v1.0.16...v1.0.17) (2024-02-22)
-
+# @netcentric/eddys-video-v1.0.0 (2024-02-27)
 
 ### Bug Fixes
 

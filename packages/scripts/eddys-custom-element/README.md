@@ -1,4 +1,4 @@
-# Eddy's Custom Element
+# Eddys Custom Element
 
 Plugin to allow decorate block as webcomponent / custom element
 
@@ -198,32 +198,6 @@ window.eddysBreakpoints = {
 };
 ```
 
-### Docs
-
-- LICENSE
-- docs/CODE_OF_CONDUCT.md
-- docs/CONTRIBUTING.md
-- docs/CHANGELOG.md --> dynamically updated
-
-### Issue template
-
-- .github/ISSUE_TEMPLATE.md
-
-### PR template
-
-- .github/PULL_REQUEST_TEMPLATE.md --> automatically closes connected issue
-
-### Workflows
-
-- CI --> npm ci, test and build
-- CodeQL --> Perform CodeQL Analysis (Security, etc.)
-- Release --> semantic-release:
-  - Creates release notes
-  - Updates CHANGELOG
-  - Updates package.json version
-  - Creates Git tag/release
-  - Publish package to NPM
-- Manual Release --> same as Release, but can be triggered manually in Actions tab
 
 ### Release
 

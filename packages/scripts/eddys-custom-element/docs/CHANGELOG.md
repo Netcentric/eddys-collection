@@ -1,3 +1,16 @@
+# @netcentric/eddys-custom-element-v1.0.0 (2024-02-28)
+
+
+### Bug Fixes
+
+* cleanup changelog ([ef4f046](https://github.com/netcentric/eddys-collection/commit/ef4f046bfa7ea04e920bbb10167df304961a95ba))
+* delete test file ([9b8ea2f](https://github.com/netcentric/eddys-collection/commit/9b8ea2fffac60ea79823e4660fa8b88c51399731))
+* enable postinstall script ([a8c70a3](https://github.com/netcentric/eddys-collection/commit/a8c70a30bdb33ae6df704b310b87a15ce1e03dd9))
+* rename packages for testing ([0264b73](https://github.com/netcentric/eddys-collection/commit/0264b733b0e495944b83e1be718063a42f5d4c56))
+* update git url ([f429b73](https://github.com/netcentric/eddys-collection/commit/f429b7327e5bf064dca58c24945821923bfa1763))
+* update release config ([cdfe4c9](https://github.com/netcentric/eddys-collection/commit/cdfe4c953f6ca01a36861d25500cac5c3f2b6e64))
+* use real package names ([a85024d](https://github.com/netcentric/eddys-collection/commit/a85024d5c0a255c7d643d6eeb39b990c94b72f7c))
+
 # @netcentric/eddys-custom-element-v1.0.0 (2024-02-27)
 
 

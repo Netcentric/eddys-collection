@@ -1,6 +1,6 @@
 {
   "name": "@netcentric/eddys-custom-element",
-  "version": "1.4.0",
+  "version": "1.0.0",
   "description": "Plugin to allow decorate block as webcomponent",
   "license": "Apache-2.0",
   "private": false,

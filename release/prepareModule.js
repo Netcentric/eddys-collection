@@ -19,10 +19,18 @@ const copyTemplates = async (modulePath) => {
   return fs.cp(templates, modulePath, { recursive: true });
 }
 
+const copyLicense = async (modulePath) => {
+  const fileName = 'LICENSE';
+  const srcFile = join(__dirname, '..', fileName);
+  const destFile = join(modulePath, fileName)
+  return fs.copyFile(srcFile, destFile);
+}
+
 const prepareModules = async () => {
   const changedModules = getPackagesPaths();
   for (const modulePath of changedModules) {
     await copyTemplates(modulePath);
+    await copyLicense(modulePath);
   }
   return changedModules;
 };

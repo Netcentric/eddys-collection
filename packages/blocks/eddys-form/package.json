@@ -1,0 +1,35 @@
+{
+  "name": "@netcentric/eddys-form",
+  "version": "1.0.0",
+  "description": "Form Block enhacement for Edge Delivery Services",
+  "license": "Apache-2.0",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/netcentric/eddys-collection.git"
+  },
+  "main": "libs",
+  "author": "Cognizant Netcentric (https://www.netcentric.biz)",
+  "scripts": {
+    "postinstall": "node install.js",
+    "release": "semantic-release",
+    "test": "echo \"eddys-custom-element\""
+  },
+  "browserslist": [
+    "last 2 versions",
+    "not ie > 0",
+    "not ie_mob > 0",
+    "not dead",
+    "not OperaMini all"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "./libs",
+    "install.js"
+  ]
+}

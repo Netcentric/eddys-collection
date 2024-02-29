@@ -33,7 +33,7 @@ let plugins = [
 ];
 
 if (forceVersion) {
-  plugins = ['manual-release.js'];
+  plugins = ['./manual-release.js'];
 } else {
   baseConfig.extends = 'semantic-release-monorepo';
 }

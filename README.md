@@ -1,26 +1,39 @@
 # Your Project's Title...
-Your project's description...
+SPA Style router with soft naviagtion betweeen pages
 
-## Environments
+## Description
+This is a simple router that uses the `fetch` API to load content from the server and update just the `<main>` tag. 
+It also uses the `history` API to update the URL and listen for changes to the URL.
+
+Excluded paths can be configured in the router.js file to prevent the router from loading content for certain paths. This is useful for paths that should be loaded in the traditional way, (for example, a page that contains a react app using react-router)
+
+If other components need to be updated when the URL changes (for example the navigation), they can listen for the `router:navgate` event on the `window` object. (see `listenToNavigationeEvents()` in `header.js` for an example)
+
+## How to use
+1. Load the router script in your head.html file
+
+```html
+  <script src="/lib/router.js" type="module"></script>
+```
+
+2. Configure the excluded paths in the router.js file
+
+```javascript
+  const excludedPaths = [
+    '/content/excluded-path',
+    '/content/excluded-path-2'
+  ];
+```
+
+3. If needed listen for the `router:navgate` event in other components
+
+```javascript
+  window.addEventListener('router:navgate', (event) => {
+    // do something with the event
+  });
+```
+
+## Demo Links
+
 - Preview: https://main--eddys-router--nfarmache-nc.hlx.page/
 - Live: https://main--eddys-router--nfarmache-nc.hlx.live/
-
-## Installation
-
-```sh
-npm i
-```
-
-## Linting
-
-```sh
-npm run lint
-```
-
-## Local development
-
-1. Create a new repository based on the `aem-boilerplate` template and add a mountpoint in the `fstab.yaml`
-1. Add the [AEM Code Sync GitHub App](https://github.com/apps/aem-code-sync) to the repository
-1. Install the [AEM CLI](https://github.com/adobe/helix-cli): `npm install -g @adobe/aem-cli`
-1. Start AEM Proxy: `aem up` (opens your browser at `http://localhost:3000`)
-1. Open the `{repo}` directory in your favorite IDE and start coding :)

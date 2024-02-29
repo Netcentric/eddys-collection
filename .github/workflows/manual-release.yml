@@ -2,6 +2,10 @@ name: Manual Release
 on:
   workflow_dispatch:
     inputs:
+      package:
+        description: 'Package'
+        type: string
+        required: true
       version:
         description: 'Version'
         type: choice
@@ -55,18 +59,13 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.NODE_VERSION }}
-      - name: Commit trigger
-        run: |
-          git commit --allow-empty -m "${{ github.event.inputs.version }}: Trigger Manual Release
-
-          ${{ github.event.inputs.version }}:Forced Manual Release without code changes"
       - name: Install dependencies
         run: npm ci --ignore-scripts
       - name: Build Library
-        run: npm run build --workspaces --if-present
+        run: npm run build --if-present --workspace=${{ github.event.inputs.package }}
       - name: Run Tests
-        run: npm test --workspaces --if-present
+        run: npm test --if-present --workspace=${{ github.event.inputs.package }}
       - name: Prepare release
-        run: DRY_RUN=${{ github.event.inputs.dryRun == 'true' }} node release/prepareModule.js
+        run: node release/prepareModule.js
       - name: Release
-        run: npm run release --workspaces
+        run: DRY_RUN=${{ github.event.inputs.dryRun == 'true' }} FORCE_VERSION=${{ github.event.inputs.version }} npm run release --workspace=${{ github.event.inputs.package }}

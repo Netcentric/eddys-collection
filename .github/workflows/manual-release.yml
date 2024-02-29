@@ -12,9 +12,9 @@ on:
         required: true
         default: fix
         options:
-          - fix
-          - feat
-          - BREAKING CHANGE
+          - patch
+          - minor
+          - major
       dryRun:
         description: 'DryRun'
         type: boolean

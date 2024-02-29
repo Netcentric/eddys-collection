@@ -26,7 +26,8 @@ The dependency will be downloaded and depending on its install script typically 
 
 - [WebComponents / CustomElements](https://github.com/Netcentric/eddys-collection/tree/main/packages/scripts/eddys-custom-element)
 - [SPA Router](TODO)
-- [Advanced Forms](TODO)
+- [Blocks](https://github.com/Netcentric/eddys-collection/tree/main/packages/blocks)
+  - [Advanced Forms](TODO)
 
 ## Best Practises & Examples
 

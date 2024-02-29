@@ -1,4 +1,4 @@
-# Your Project's Title...
+# eddys-router
 SPA Style router with soft naviagtion betweeen pages
 
 ## Description

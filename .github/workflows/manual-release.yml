@@ -10,7 +10,7 @@ on:
         description: 'Version'
         type: choice
         required: true
-        default: fix
+        default: patch
         options:
           - patch
           - minor

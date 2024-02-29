@@ -1,4 +1,4 @@
-# Netcentric Block Collection
+# Adobe Experience Manager - Edge Delivery Services - Extension Collection
 
 [![Version](https://img.shields.io/npm/v/@netcentric/eddys-video.svg)](https://npmjs.org/package/@netcentric/eddys-video)
 [![Build Status](https://github.com/netcentric/eddys-video/workflows/CI/badge.svg?branch=main)](https://github.com/netcentric/eddys-video/actions)
@@ -6,73 +6,36 @@
 [![semver: semantic-release](https://img.shields.io/badge/semver-semantic--release-blue.svg)](https://github.com/semantic-release/semantic-release)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-Custom and extendable block collection 
+This repository provides a set of extensions and documents best practises for projects based on the [AEM Boilderplate](https://github.com/adobe/aem-boilerplate).
+
+The repository structure follows the [monorepo](https://en.wikipedia.org/wiki/Monorepo) approach, meaning it contains multiple sub-modules. All of those sub-modules aim to be usable standalone. Using them in your project should be a "choose and cherry-pick" rather than an all or nothing.
+
+For demo purposes most of the modules are installed on https://github.com/netcentric/genom.
 
 ## Installation
 
-In the Edge delivery project folder run
+As mentioned above each sub-module can be installed standalone but there is also a wrapper module to install all at once. Installation follows always the same approach documented in [TODO](TODO):
 
-`npm i @netcentric/eddys-block-collection` //TODO change name to the correct package/repo
+In your own AEM project repository directory run
 
-it will download it as a dependency and create a `/libs` folder with all th e blocks to reference.
+`npm i @netcentric/eddys-<module>`
 
-## Usage
+The dependency will be downloaded and depending on its install script typically create a `/libs` folder containing all the necessary scripts to use it. Some modules have some additional instructions about manuel integration steps. For these please refer to the documentation of the individual modules.
 
-in your `/blocks` folder create a new block with a css and a js file (the name can be the same or different that the block you want to use)
+## Modules
 
-### JS file: There Are 2 ways to use a block from the Block Collection
+- [WebComponents / CustomElements](https://github.com/Netcentric/eddys-collection/tree/main/packages/scripts/eddys-custom-element)
+- [SPA Router](TODO)
+- [Advanced Forms](TODO)
 
-#### Option 1 
-Use an already existing block with no possibility to extend the js or use a custom block developed using a js class Not extending the js class
+## Best Practises & Examples
 
-You need to import the defaultDecorate function form the `libs/blocks` block you want to use.
-And export the async function decorate to get your code executed when the block is in place.
-```javascript
-import defaultDecorate from '/libs/blocks/<original-block-name>/<original-block-name>.js';
+- [Dependency installation and updates](TODO)
+- [Extendable Blocks](TODO)
+- [SPA integration](TODO)
+- [Closed User Groups and Permissions](https://github.com/Netcentric/envelop) (separate repository)
 
-export default async function decorate(block) {
-    // Custom decoration can be done here
-  await defaultDecorate(block);
-}
-```
-
-#### Option 2
-Use a custom block developed using a js class extending the js class
-
-You need to import the defaultDecorate and the OriginalBlockName (the class with the block functionality) form the `libs/blocks` block you want to use.
-And export the async function decorate to get your code executed when the block is in place.
-If we are extending the class we need to pass the extended class as a param in the defaultDecorate function
-
-```javascript
-import { defaultDecorate, OriginalBlockName } from '/libs/blocks/<original-block-name>/<original-block-name>.js';
-
-class BlockName extends OriginalBlockName {
-  constructor(block) {
-    super(block);
-  }
-    // Code here
-}
-
-export default async function decorate(block) {
-  // Custom decoration can be done here
-  await defaultDecorate(block, BlockName); // Note that you need to pass the extended class to the defaultDeaorate
-}
-```
-### CSS file:
-You need to import the CSS file form the `libs/blocks` block you want to use.
-And then you can add as much extra CSS you want.
-
-```css
-@import "/libs/blocks/<original-block-name>/<original-block-name>.css";
-
-/* you can add custom css here */ 
-```
-
-### Issue template
-  - .github/ISSUE_TEMPLATE.md
-
-### PR template
-  - .github/PULL_REQUEST_TEMPLATE.md --> automatically closes connected issue
+## Contribution
 
 ### Workflows
   - CI --> npm ci, test and build

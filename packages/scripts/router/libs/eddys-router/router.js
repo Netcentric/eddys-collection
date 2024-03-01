@@ -4,7 +4,7 @@ import { loadBlocks, decorateTemplateAndTheme } from '../scripts/aem.js';
 
 
 function isPathExcluded(path) {
-  return (window.routerExcludedPaths || []).some((excludedPath) => (
+  return ((window.router || {}).excludedPaths || []).some((excludedPath) => (
     path === excludedPath
     || path.startsWith(`${excludedPath}/`)
   ));

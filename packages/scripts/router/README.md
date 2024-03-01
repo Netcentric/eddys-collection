@@ -19,16 +19,18 @@ npm i @netcentric/eddys-router
 2. Load the router script in your head.html file
 
 ```html
-  <script src="/lib/router.js" type="module"></script>
+  <script src="/libs/eddys-router/router.js" type="module"></script>
 ```
 
 3. Configure the excluded paths 
 
 ```javascript
-  window.routerExcludedPaths = [
-    '/content/excluded-path',
-    '/content/excluded-path-2'
-  ];
+  window.router = {
+    excludedPaths: [
+      '/content/excluded-path',
+      '/content/excluded-path-2'
+    ];
+  };
 ```
 
 4. If needed listen for the `router:navgate` event in other components

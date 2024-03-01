@@ -10,22 +10,28 @@ Excluded paths can be configured in the router.js file to prevent the router fro
 If other components need to be updated when the URL changes (for example the navigation), they can listen for the `router:navgate` event on the `window` object. (see `listenToNavigationeEvents()` in `header.js` for an example)
 
 ## How to use
-1. Load the router script in your head.html file
+1. Install the router.js to your repository
+
+```bash
+npm i @netcentric/eddys-router
+```
+
+2. Load the router script in your head.html file
 
 ```html
   <script src="/lib/router.js" type="module"></script>
 ```
 
-2. Configure the excluded paths in the router.js file
+3. Configure the excluded paths 
 
 ```javascript
-  const excludedPaths = [
+  window.routerExcludedPaths = [
     '/content/excluded-path',
     '/content/excluded-path-2'
   ];
 ```
 
-3. If needed listen for the `router:navgate` event in other components
+4. If needed listen for the `router:navgate` event in other components
 
 ```javascript
   window.addEventListener('router:navgate', (event) => {

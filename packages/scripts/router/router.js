@@ -1,14 +1,10 @@
 import { decorateMain } from '../scripts/scripts.js';
 import { loadBlocks, decorateTemplateAndTheme } from '../scripts/aem.js';
 
-// Add your excluded paths to the list
-const excludedPaths = [
-  '/excluded',
-  '/app',
-];
+
 
 function isPathExcluded(path) {
-  return excludedPaths.some((excludedPath) => (
+  return (window.routerExcludedPaths || []).some((excludedPath) => (
     path === excludedPath
     || path.startsWith(`${excludedPath}/`)
   ));

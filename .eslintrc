@@ -1,0 +1,7 @@
+{
+  "extends": "@netcentric/eslint-config",
+  "rules": {
+    "indent": ["error", 2],
+    "comma-dangle": ["error", "always-multiline"],
+  }
+}

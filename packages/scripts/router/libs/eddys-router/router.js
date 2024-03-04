@@ -1,8 +1,6 @@
 import { decorateMain } from '../scripts/scripts.js';
 import { loadBlocks, decorateTemplateAndTheme } from '../scripts/aem.js';
 
-
-
 function isPathExcluded(path) {
   return ((window.router || {}).excludedPaths || []).some((excludedPath) => (
     path === excludedPath

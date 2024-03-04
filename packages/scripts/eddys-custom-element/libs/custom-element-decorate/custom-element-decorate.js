@@ -15,12 +15,12 @@ export default function customElementsDecorate(elementName, contructor) {
         resolve(el);
       };
       if (customElements.get(elementName)) {
-        const el = setupElement(elementName, block);
+        setupElement(elementName, block);
       } else {
         customElements.define(elementName, contructor);
         if (!window.eddysComponents) window.eddysComponents = {};
         window.eddysComponents[elementName] = contructor;
-        const el = setupElement(elementName, block);
+        setupElement(elementName, block);
       }
     });
   };

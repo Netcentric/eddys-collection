@@ -2,11 +2,11 @@ import createField from './eddys-form-fields.js';
 import { sampleRUM } from '../../scripts/aem.js';
 
 export class EddysForm {
-  payload = {};
-  currentStep = 1;
-  maxSteps = 1;
-
   constructor(block) {
+    this.payload = {};
+    this.currentStep = 1;
+    this.maxSteps = 1;
+  
     this.formLink = block.querySelector('a[href$=".json"]');
     if (!this.formLink) return;
 
@@ -170,6 +170,6 @@ export class EddysForm {
 
 export async function defaultDecorate(block, ClassObj) {
   block.classList.add('eddys-form');
-  const eddysForm = ClassObj ? new ClassObj(block): new EddysForm(block);
+  const eddysForm = ClassObj ? new ClassObj(block) : new EddysForm(block);
   await eddysForm.init();
 }

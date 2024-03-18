@@ -12,5 +12,6 @@ export async function defaultDecorate(block, ClassObj) {
 
   // Your decoration code here
 
-  const exampleBlock = ClassObj ? new ClassObj(block): new ExampleBlock(block); // Change "ExampleBlock" according to the class name
+  // eslint-disable-next-line no-unused-vars
+  const exampleBlock = ClassObj ? new ClassObj(block) : new ExampleBlock(block); // Change "ExampleBlock" according to the class name
 }

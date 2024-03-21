@@ -25,15 +25,15 @@ The dependency will be downloaded and depending on its install script typically 
 ## Modules
 
 - [WebComponents / CustomElements](https://github.com/Netcentric/eddys-collection/tree/main/packages/scripts/eddys-custom-element)
-- [SPA Router](TODO)
+- [SPA Router](https://github.com/Netcentric/eddys-collection/tree/main/packages/scripts/router)
 - [Blocks](https://github.com/Netcentric/eddys-collection/tree/main/packages/blocks)
-  - [Advanced Forms](TODO)
+  - [Advanced Forms](https://github.com/Netcentric/eddys-collection/tree/main/packages/blocks/eddys-form)
 
 ## Best Practises & Examples
 
-- [Dependency installation and updates](TODO)
-- [Extendable Blocks](TODO)
-- [SPA integration](TODO)
+- [Dependency installation and updates](https://github.com/Netcentric/eddys-collection/tree/main/packages)
+- [Extendable Blocks](https://github.com/Netcentric/eddys-collection/tree/main/packages/blocks)
+- [SPA integration]([TODO](https://github.com/Netcentric/eddys-collection/tree/main/packages/scripts/router))
 - [Closed User Groups and Permissions](https://github.com/Netcentric/envelop) (separate repository)
 
 ## Contribution
